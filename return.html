@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Информация о возврате - Магазин мебели">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Возврат - Магазин мебели</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <script src="scripts.js" defer></script>
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <a href="index.html" class="logo-container">
+                <img src="./img/logo.jpg" alt="Логотип Магазина" class="logo">
+                <span class="store-name">Furniture Store</span>
+            </a>
+            <nav>
+                <ul>
+                    <li><a href="index.html"><i class="fas fa-home"></i> Главная</a></li>
+                    <li><a href="catalog.html"><i class="fas fa-couch"></i> Каталог</a></li>
+                    <li><a href="cart.html"><i class="fas fa-shopping-cart"></i> Корзина</a></li>
+                    <li><a href="contact.html"><i class="fas fa-envelope"></i> Контакты</a></li>
+                    <li><a href="sitemap.html"><i class="fas fa-sitemap"></i> Карта сайта</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="info-section">
+            <h1>Возврат товара</h1>
+            <div class="info-content">
+                <div class="info-block">
+                    <h2><i class="fas fa-undo"></i> Условия возврата</h2>
+                    <ul>
+                        <li>
+                            <h3>Сроки возврата</h3>
+                            <p>14 дней с момента получения товара</p>
+                            <p>30 дней при обнаружении производственного брака</p>
+                        </li>
+                        <li>
+                            <h3>Требования к товару</h3>
+                            <p>Сохранение товарного вида</p>
+                            <p>Наличие оригинальной упаковки</p>
+                            <p>Отсутствие следов использования</p>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="info-block">
+                    <h2><i class="fas fa-clipboard-list"></i> Необходимые документы</h2>
+                    <ul>
+                        <li>Паспорт</li>
+                        <li>Чек или другой документ о покупке</li>
+                        <li>Заявление на возврат</li>
+                        <li>Реквизиты для возврата денег</li>
+                    </ul>
+                </div>
+
+                <div class="info-block">
+                    <h2><i class="fas fa-exchange-alt"></i> Процедура возврата</h2>
+                    <ol>
+                        <li>Свяжитесь с нами по телефону или email</li>
+                        <li>Заполните заявление на возврат</li>
+                        <li>Согласуйте время вывоза товара</li>
+                        <li>Подготовьте товар и документы</li>
+                        <li>Получите возврат денежных средств</li>
+                    </ol>
+                </div>
+
+                <div class="info-block">
+                    <h2><i class="fas fa-money-bill-wave"></i> Возврат денежных средств</h2>
+                    <ul>
+                        <li>На банковскую карту: 3-5 рабочих дней</li>
+                        <li>На расчетный счет: 5-7 рабочих дней</li>
+                        <li>Наличными в магазине: в день обращения</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Контакты</h3>
+                <p class="contact-info">
+                    <i class="fas fa-phone"></i> +7 (985) 188-73-37<br>
+                    <i class="fas fa-envelope"></i> ilianefedov2007@gmail.com<br>
+                    <i class="fas fa-map-marker-alt"></i> г. Москва, ул. Мебельная, 1
+                </p>
+            </div>
+            <div class="footer-section">
+                <h3>Мы в соцсетях</h3>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-vk"></i></a>
+                    <a href="#"><i class="fab fa-telegram"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+            <div class="footer-section">
+                <h3>Режим работы</h3>
+                <p>Пн-Пт: 9:00 - 20:00<br>
+                   Сб-Вс: 10:00 - 18:00</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>© 2025 Магазин мебели. Все права защищены.</p>
+        </div>
+    </footer>
+
+    <!-- Кнопка "Вверх" -->
+    <button id="back-to-top" class="back-to-top" title="Вернуться к началу страницы">
+        <i class="fas fa-chevron-up"></i>
+    </button>
+
+    <!-- Кнопка доступности -->
+    <button id="accessibility-btn" class="accessibility-btn" title="Настройки доступности">
+        <i class="fas fa-universal-access"></i>
+    </button>
+
+    <div id="accessibility-menu" class="accessibility-menu">
+        <div class="font-size-controls">
+            <button id="font-size-normal" title="Обычный размер текста">
+                <i class="fas fa-text-size"></i> A
+            </button>
+            <button id="font-size-large" title="Крупный размер текста">
+                <i class="fas fa-text-size"></i> A+
+            </button>
+            <button id="font-size-larger" title="Очень крупный размер текста">
+                <i class="fas fa-text-size"></i> A++
+            </button>
+        </div>
+    </div>
+
+    <script>
+        // Показать/скрыть кнопку "Вверх" при прокрутке
+        window.onscroll = function() {
+            const backToTopButton = document.getElementById('back-to-top');
+            if (document.body.scrollTop > 500 || document.documentElement.scrollTop > 500) {
+                backToTopButton.style.display = "flex";
+                backToTopButton.style.opacity = "1";
+            } else {
+                backToTopButton.style.opacity = "0";
+                setTimeout(() => {
+                    if (backToTopButton.style.opacity === "0") {
+                        backToTopButton.style.display = "none";
+                    }
+                }, 300);
+            }
+        };
+
+        // Плавная прокрутка вверх при клике на кнопку
+        document.getElementById('back-to-top').addEventListener('click', function() {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        });
+
+        // Функционал кнопки доступности
+        document.addEventListener('DOMContentLoaded', function() {
+            const accessibilityBtn = document.getElementById('accessibility-btn');
+            const accessibilityMenu = document.getElementById('accessibility-menu');
+            const fontSizeNormal = document.getElementById('font-size-normal');
+            const fontSizeLarge = document.getElementById('font-size-large');
+            const fontSizeLarger = document.getElementById('font-size-larger');
+
+            // Загружаем сохраненные настройки
+            const savedFontSize = localStorage.getItem('fontSize');
+
+            if (savedFontSize) {
+                document.body.className = savedFontSize;
+            }
+
+            // Показать/скрыть меню доступности
+            accessibilityBtn.addEventListener('click', () => {
+                accessibilityMenu.classList.toggle('active');
+            });
+
+            // Закрыть меню при клике вне его
+            document.addEventListener('click', (e) => {
+                if (!accessibilityBtn.contains(e.target) && !accessibilityMenu.contains(e.target)) {
+                    accessibilityMenu.classList.remove('active');
+                }
+            });
+
+            // Обработчики для размера шрифта
+            fontSizeNormal.addEventListener('click', () => {
+                document.body.className = '';
+                localStorage.setItem('fontSize', '');
+            });
+
+            fontSizeLarge.addEventListener('click', () => {
+                document.body.className = 'font-size-large';
+                localStorage.setItem('fontSize', 'font-size-large');
+            });
+
+            fontSizeLarger.addEventListener('click', () => {
+                document.body.className = 'font-size-larger';
+                localStorage.setItem('fontSize', 'font-size-larger');
+            });
+        });
+    </script>
+</body>
+</html> 

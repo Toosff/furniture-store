@@ -1,0 +1,101 @@
+<!DOCTYPE html><html><head><title>Товар</title><link rel='stylesheet' href='style.css'></head><body><h1>Карточка товара</h1>
+
+    <!-- Кнопка "Вверх" -->
+    <button id="back-to-top" class="back-to-top" title="Вернуться к началу страницы">
+        <i class="fas fa-chevron-up"></i>
+    </button>
+
+    <!-- Кнопка доступности -->
+    <button id="accessibility-btn" class="accessibility-btn" title="Настройки доступности">
+        <i class="fas fa-universal-access"></i>
+    </button>
+
+    <div id="accessibility-menu" class="accessibility-menu">
+        <div class="font-size-controls">
+            <button id="font-size-normal" title="Обычный размер текста">
+                <i class="fas fa-text-size"></i> A
+            </button>
+            <button id="font-size-large" title="Крупный размер текста">
+                <i class="fas fa-text-size"></i> A+
+            </button>
+            <button id="font-size-larger" title="Очень крупный размер текста">
+                <i class="fas fa-text-size"></i> A++
+            </button>
+        </div>
+    </div>
+
+    <a href="index.html" class="logo-container">
+        <img src="./img/logo.jpg" alt="Логотип Магазина" class="logo">
+        <span class="store-name">Furniture Store</span>
+    </a>
+
+    <script>
+        // Показать/скрыть кнопку "Вверх" при прокрутке
+        window.onscroll = function() {
+            const backToTopButton = document.getElementById('back-to-top');
+            if (document.body.scrollTop > 500 || document.documentElement.scrollTop > 500) {
+                backToTopButton.style.display = "flex";
+                backToTopButton.style.opacity = "1";
+            } else {
+                backToTopButton.style.opacity = "0";
+                setTimeout(() => {
+                    if (backToTopButton.style.opacity === "0") {
+                        backToTopButton.style.display = "none";
+                    }
+                }, 300);
+            }
+        };
+
+        // Плавная прокрутка вверх при клике на кнопку
+        document.getElementById('back-to-top').addEventListener('click', function() {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        });
+
+        // Функционал кнопки доступности
+        document.addEventListener('DOMContentLoaded', function() {
+            const accessibilityBtn = document.getElementById('accessibility-btn');
+            const accessibilityMenu = document.getElementById('accessibility-menu');
+            const fontSizeNormal = document.getElementById('font-size-normal');
+            const fontSizeLarge = document.getElementById('font-size-large');
+            const fontSizeLarger = document.getElementById('font-size-larger');
+
+            // Загружаем сохраненные настройки
+            const savedFontSize = localStorage.getItem('fontSize');
+
+            if (savedFontSize) {
+                document.body.className = savedFontSize;
+            }
+
+            // Показать/скрыть меню доступности
+            accessibilityBtn.addEventListener('click', () => {
+                accessibilityMenu.classList.toggle('active');
+            });
+
+            // Закрыть меню при клике вне его
+            document.addEventListener('click', (e) => {
+                if (!accessibilityBtn.contains(e.target) && !accessibilityMenu.contains(e.target)) {
+                    accessibilityMenu.classList.remove('active');
+                }
+            });
+
+            // Обработчики для размера шрифта
+            fontSizeNormal.addEventListener('click', () => {
+                document.body.className = '';
+                localStorage.setItem('fontSize', '');
+            });
+
+            fontSizeLarge.addEventListener('click', () => {
+                document.body.className = 'font-size-large';
+                localStorage.setItem('fontSize', 'font-size-large');
+            });
+
+            fontSizeLarger.addEventListener('click', () => {
+                document.body.className = 'font-size-larger';
+                localStorage.setItem('fontSize', 'font-size-larger');
+            });
+        });
+    </script>
+</body></html>

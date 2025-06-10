@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Контакты - Магазин мебели">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Контакты - Магазин мебели</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <script src="scripts.js" defer></script>
+    <script src="contact.js" defer></script>
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <a href="index.html" class="logo-container">
+                <img src="./img/logo.jpg" alt="Логотип Магазина" class="logo">
+                <span class="store-name">Furniture Store</span>
+            </a>
+            <nav>
+                <ul>
+                    <li><a href="index.html"><i class="fas fa-home"></i> Главная</a></li>
+                    <li><a href="catalog.html"><i class="fas fa-couch"></i> Каталог</a></li>
+                    <li><a href="cart.html"><i class="fas fa-shopping-cart"></i> Корзина</a></li>
+                    <li><a href="contact.html"><i class="fas fa-envelope"></i> Контакты</a></li>
+                    <li><a href="sitemap.html"><i class="fas fa-sitemap"></i> Карта сайта</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="contact-section">
+            <h1>Контакты</h1>
+            
+            <div class="contact-content">
+                <div class="contact-info-container">
+                    <div class="contact-card">
+                        <h2>Наши контакты</h2>
+                        <div class="contact-details">
+                            <div class="contact-item">
+                                <i class="fas fa-map-marker-alt"></i>
+                                <div>
+                                    <h3>Адрес</h3>
+                                    <p>г. Москва, ул. Мебельная, 1</p>
+                                </div>
+                            </div>
+                            <div class="contact-item">
+                                <i class="fas fa-phone"></i>
+                                <div>
+                                    <h3>Телефон</h3>
+                                    <p><a href="tel:+71234567890">+7 (985) 188-73-37</a></p>
+                                </div>
+                            </div>
+                            <div class="contact-item">
+                                <i class="fas fa-envelope"></i>
+                                <div>
+                                    <h3>Email</h3>
+                                    <p><a href="mailto:info@furniture-shop.ru">ilianefedov2007@gmail.com</a></p>
+                                </div>
+                            </div>
+                            <div class="contact-item">
+                                <i class="fas fa-clock"></i>
+                                <div>
+                                    <h3>Режим работы</h3>
+                                    <p>Пн-Пт: 9:00 - 20:00<br>
+                                       Сб-Вс: 10:00 - 18:00</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="contact-form-container">
+                        <h2>Напишите нам</h2>
+                        <form id="contact-form" class="contact-form">
+                            <div class="form-group">
+                                <label for="name">Ваше имя</label>
+                                <input type="text" id="name" name="name" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="email">Email</label>
+                                <input type="email" id="email" name="email" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="phone">Телефон</label>
+                                <input type="tel" id="phone" name="phone" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="subject">Тема</label>
+                                <select id="subject" name="subject" required>
+                                    <option value="">Выберите тему</option>
+                                    <option value="order">Вопрос по заказу</option>
+                                    <option value="product">Вопрос по товару</option>
+                                    <option value="delivery">Доставка</option>
+                                    <option value="other">Другое</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="message">Сообщение</label>
+                                <textarea id="message" name="message" rows="5" required></textarea>
+                            </div>
+                            <button type="submit" class="submit-button">
+                                <i class="fas fa-paper-plane"></i> Отправить
+                            </button>
+                        </form>
+                    </div>
+                </div>
+
+                <div class="map-container">
+                    <h2>Как нас найти</h2>
+                    <div class="map">
+                        <iframe 
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2245.5887651424937!2d37.6173!3d55.7558!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNTXCsDQ1JzIwLjkiTiAzN8KwMzcnMDIuMyJF!5e0!3m2!1sru!2sru!4v1635942144354!5m2!1sru!2sru" 
+                            width="100%" 
+                            height="450" 
+                            style="border:0;" 
+                            allowfullscreen="" 
+                            loading="lazy">
+                        </iframe>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Контакты</h3>
+                <p class="contact-info">
+                    <i class="fas fa-phone"></i> +7 (985) 188-73-37<br>
+                    <i class="fas fa-envelope"></i> ilianefedov2007<br>
+                    <i class="fas fa-map-marker-alt"></i> г. Москва, ул. Мебельная, 1
+                </p>
+            </div>
+            <div class="footer-section">
+                <h3>Мы в соцсетях</h3>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-vk"></i></a>
+                    <a href="#"><i class="fab fa-telegram"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+            <div class="footer-section">
+                <h3>Режим работы</h3>
+                <p>Пн-Пт: 9:00 - 20:00<br>
+                   Сб-Вс: 10:00 - 18:00</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>© 2025 Магазин мебели. Все права защищены.</p>
+        </div>
+    </footer>
+
+    <!-- Кнопка "Вверх" -->
+    <button id="back-to-top" class="back-to-top" title="Вернуться к началу страницы">
+        <i class="fas fa-chevron-up"></i>
+    </button>
+
+    <!-- Кнопка доступности -->
+    <button id="accessibility-btn" class="accessibility-btn" title="Настройки доступности">
+        <i class="fas fa-universal-access"></i>
+    </button>
+
+    <div id="accessibility-menu" class="accessibility-menu">
+        <div class="font-size-controls">
+            <button id="font-size-normal" title="Обычный размер текста">
+                <i class="fas fa-text-size"></i> A
+            </button>
+            <button id="font-size-large" title="Крупный размер текста">
+                <i class="fas fa-text-size"></i> A+
+            </button>
+            <button id="font-size-larger" title="Очень крупный размер текста">
+                <i class="fas fa-text-size"></i> A++
+            </button>
+        </div>
+    </div>
+
+    <script>
+        // Показать/скрыть кнопку "Вверх" при прокрутке
+        window.onscroll = function() {
+            const backToTopButton = document.getElementById('back-to-top');
+            if (document.body.scrollTop > 500 || document.documentElement.scrollTop > 500) {
+                backToTopButton.style.display = "flex";
+                backToTopButton.style.opacity = "1";
+            } else {
+                backToTopButton.style.opacity = "0";
+                setTimeout(() => {
+                    if (backToTopButton.style.opacity === "0") {
+                        backToTopButton.style.display = "none";
+                    }
+                }, 300);
+            }
+        };
+
+        // Плавная прокрутка вверх при клике на кнопку
+        document.getElementById('back-to-top').addEventListener('click', function() {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        });
+
+        // Функционал кнопки доступности
+        document.addEventListener('DOMContentLoaded', function() {
+            const accessibilityBtn = document.getElementById('accessibility-btn');
+            const accessibilityMenu = document.getElementById('accessibility-menu');
+            const fontSizeNormal = document.getElementById('font-size-normal');
+            const fontSizeLarge = document.getElementById('font-size-large');
+            const fontSizeLarger = document.getElementById('font-size-larger');
+
+            // Загружаем сохраненные настройки
+            const savedFontSize = localStorage.getItem('fontSize');
+
+            if (savedFontSize) {
+                document.body.className = savedFontSize;
+            }
+
+            // Показать/скрыть меню доступности
+            accessibilityBtn.addEventListener('click', () => {
+                accessibilityMenu.classList.toggle('active');
+            });
+
+            // Закрыть меню при клике вне его
+            document.addEventListener('click', (e) => {
+                if (!accessibilityBtn.contains(e.target) && !accessibilityMenu.contains(e.target)) {
+                    accessibilityMenu.classList.remove('active');
+                }
+            });
+
+            // Обработчики для размера шрифта
+            fontSizeNormal.addEventListener('click', () => {
+                document.body.className = '';
+                localStorage.setItem('fontSize', '');
+            });
+
+            fontSizeLarge.addEventListener('click', () => {
+                document.body.className = 'font-size-large';
+                localStorage.setItem('fontSize', 'font-size-large');
+            });
+
+            fontSizeLarger.addEventListener('click', () => {
+                document.body.className = 'font-size-larger';
+                localStorage.setItem('fontSize', 'font-size-larger');
+            });
+        });
+    </script>
+</body>
+</html>
